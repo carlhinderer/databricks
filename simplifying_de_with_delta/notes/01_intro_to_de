@@ -1,0 +1,469 @@
+------------------------------------------------------------------
+| CHAPTER 1 - INTRO TO DE                                        |
+------------------------------------------------------------------
+
+- The Motivation Behind DE
+
+    - DE is the process of converting raw data into analytics-ready data that is more accessible, usable,
+        and consumable.
+
+
+    - Modern companies are increasingly data-driven, which means they use data to make business decisions
+        to give them better insights into their customers and business operations.  They can use these
+        insights to improve profitability, reduce costs, and give them a competitive edge in the market.
+
+
+    - We are currently at the intersection of big data, the cloud, and AI, all of which are fueling 
+        tremendous innovation and generating data exponentially.  This makes DE increasingly important.
+
+
+
+- Use Cases
+
+    - Security Incident and Event Management (SEIM) is used by cyber security systems for threat detection
+        and prevention.  This involves user activity monitoring and auditing for suspicious activity
+        patterns.  It entails collecting a large volume of logs across several devices and systems, analyzing 
+        them in real time, correlating data, and reporting via alerts and dashboard refreshes.
+
+
+    - Genomics and drug development are used in health and life sciences.  A single human genome requires
+        100 GB of storage, and it is estimated 40 exabytes will be needed to store and process all the
+        sequenced genomes in 2025.  This data helps researchers understand and develop targeted cures.
+
+
+    - Autonomous vehicles use a lot of unstructured image data that's been generating from cameras on the
+        car.  An active vehicle generates 5 TB every hour.
+
+
+    - Iot sensors are used in smart manufacturing and the Industry 4.0 revolution.  This enables a lot of
+        efficiencies on the shop floor.  Data is at the forefront of initiatives with real-time monitoring,
+        predictive maintenance, early altering, and digital twin technology to create closed-loop
+        operations.
+
+
+    - Personalized recommendations in retail helps retailers engage better with their customers, providing
+        an omnichannel experience.  This can address concerns before a customer churns to a competitor,
+        lift sales, and reduce marketing costs.
+
+
+    - Gaming and entertainment captivate users who spend several hours in a multi-player game session.
+        For instance, Fortnite generates 100 MB of data per user, per hour.  Music and video streaming rely
+        on recommendations for new playlists.
+
+
+    - Smart agriculture uses big data to understand weather patterns for smart irrigation and crop planting,
+        and check soil conditions for the right fertilizer dose.  John Deere uses computer vision to detect
+        weeds and localize the use of sprays.
+
+
+    - Detecting and preventing fraud is important in the fintech sector.  Because we are constantly 
+        transacting online, a lot of digital fingerprints are left behind.  By some estimates, 10% of
+        insurance payments are due to fraud.  AI techniques can detect unusual patterns so that a user can
+        be notified before a lot of the damage is done.
+
+
+    - Every business has a need to forecast across a wide variety of verticals (business areas), either to
+        predict sales, stock inventory, or supply chain logistics.  This is not as straightforward as
+        projection, since other patterns influence this - seasonality, weather, shift is micro or
+        macroeconomic conditions.
+
+
+
+- How Big is Big Data?
+
+    - 90% of the data in existence has been generated in the last 2 years.  An estimated 2.5 quintillion
+        bytes of data is produced every day.
+
+
+    - Structured data only accounts for 5-10% of entreprise data.  Semi-structured and unstructured data
+        accounts for the rest.
+
+
+    - Raw data by itself won't make a dent in a business.  The useful insights generated from curated data
+        are the refined consumable oil that businesses aspire for.  Data drives ML, which in turn gives
+        businesses their competitive advantage.
+
+
+
+- Data Personas
+
+    - DEs focus on maintaining data pipelines that ingest and transform data.
+
+    - BI analysts focus on SQL-based reporting and can be operational or domain-specific Subject Matter
+        Experts
+
+    - Data scientists are statisticians who explore and analyzed the data and use modeling techniques at
+        various levels of sophistication.
+
+    - DevOps and MLOps focus on the infrastructure aspects of monitoring and automation.
+
+    - ML engineers can span both data engineering and data science.
+
+    - Data leaders are chief data officers.  They are data stewards who are the ultimate governors of data.
+
+
+
+- Characteristics of Big Data
+
+    - Volume = the size of the data, both historical and current
+
+        - The number of records in a file or table
+        - The size of the data in GB, TB, etc.
+
+
+    - Velocity = the frequency at which new data arrives
+
+        - The batches have a well-defined interval, such as daily or hourly
+        - Real time is either continuous or micro-batch, typically in seconds
+
+
+    - Variety = the structural nature of the data
+
+        - Structured data is usually relational and has a well-defined schema
+        - Semi-structured data has a self-describing schema that can evolve (ie XML or JSON)
+        - Unstructured data is free-text, audio, or video data which is usually in a binary format
+
+
+    - Veracity = the trustworthiness and reliability of data
+
+        - Lineage describes the source system and systems that applied transformations
+        - This is required to audit and maintain data fidelity
+
+
+    - Value = the business impact the dataset has
+
+
+
+- Classifying Data
+
+    - As the volume of data increases, we move from regular systems to big data systems.  Big data is
+        typically TB of data that cannot fit on a single computer node.
+
+
+    - As the velocity of data increases, we move toward big data systems specializing in streaming.
+
+        - In batch systems, data is processed at a predefined regular interval.
+        - In streaming systems (continuous), data is processed as it comes.
+        - In streaming systems (micro-batch), data is aggregated in small batches, typically a few seconds.
+
+
+    - As the variety of data increases, we move toward big data systems.
+
+        - With structured data, the schema is well-known and stable.
+        - With semi-structured data, the schema is built into the data and can evolve.
+        - With unstructured data, there is some metadata but no real schema.
+
+
+
+- Reaping Value From Data
+
+    - The more we refine data, the higher the cost of the data, and also the higher the value of the data.
+
+
+    - In order of increasing business value:
+
+        - Operational Analytics
+        - Diagnostic/Exploratory Analytics
+        - Planning Analytics
+        - Predictive Analytics
+        - Optimization/Efficiency Analytics
+        - Prescriptive Analytics
+
+
+
+- The Top Challenges of Big Data Systems
+
+    - According to Gartner, the 3 main challenges of big data systems are:
+
+        1. Data silos
+        2. Fragmented tools
+        3. Shortage of people with the skill sets to wield them
+
+
+
+- Evolution of Data Systems
+
+    - 1960s-1970s = DBMS technologies
+
+        - Flat file systems in the 1960s
+        - RDBMS's in the 1970s
+
+
+    - 1980s-1990s = Data warehouses
+
+        - Data warehouses, dimensional modeling, and data marts
+        - MPP databases such as Teradata
+        - Expensive but reliable for BI use cases with relational data on proprietary systems
+
+
+    - 2000s = Web and unstructured data
+
+        - Audio and video codecs exploded, metadata grew, early streaming requirements
+        - NoSQL databases invented to handle processing needs
+        - Hadoop came around, open culture, data reliability dropped
+
+
+    - 2010s = Data lakes
+
+        - Spark increased in popularity due to speed and agility
+        - Cloud data platforms with cheaper storage
+        - Specialized stores like Graph DBs continued to evolve
+        - Rapid strides in improvement of models like deep learning
+
+
+    - 2020s = Lakehouses
+
+        - Data Mesh, Data Fabric, Lakehouse
+        - Focus on data domains and holistic data products
+
+
+
+- Rise of Cloud Data Platforms
+
+    - Over time, the 3 major shifts in architecture offerings have been:
+
+        1. Data warehouses
+        2. Hadoop and data lakes
+        3. Cloud data platforms refining the data lake offerings
+
+
+    - The use cases we have been trying to solve for all 3 generations are:
+
+        - SQL-based BI reporting
+        - Exploratory data analytics
+        - ML
+
+
+    - Data warehouses were good at handling modest volume and excelled at BI reporting use cases.  They
+        had limited support for semi-structured data and no support for unstructured data.  They could
+        only support batch workloads.  They were proprietary and expensive.  Older data would be dropped
+        to accomodate new data.  Interactive queries had to wait for ingestion workloads to finish.
+
+
+    - Hadoop could support large volumes of all types of data, including streaming capabilities.  
+        A schema-on-read approach made ingestion easy but consumption hard.  Managing a Hadoop cluster
+        was complex.  Hive was SQL-like and was the most popular of all offerings, but access performance
+        was slow, so part of the curated data was pushed into data warehouses to speed up queries.  This
+        meant 2 systems were stitched together.
+
+
+    - Cloud data platforms simlified the infrastructure manageability and governance aspects.  Extra
+        attention was spent to prevents lakes turning into swamps.  The elasticity and scalability of the
+        cloud helped contain costs and made it a worthwile investment.
+
+
+
+- SQL and NoSQL systems
+
+    - Categories of NoSQL systems:
+
+        - Key/value Stores (ie S3 and Azure Blog Storage)
+
+        - Big Table Stores (ie DynamoDB, HBase, and Cassandra)
+
+        - Document Stores (ie CouchDB and MongoDB)
+
+        - Full Text Stores (ie Solr and Elastic, both based on Lucene)
+
+        - Graph Data Stores (ie Neo4j)
+
+        - In-memory Data Stores (ie Redis and MemSQL)
+
+
+    - ACID properties are the basis of relational systems:
+
+        - Atomicity = Either the transaction succeeds or fails
+
+        - Consistency = The logic must be correct every time
+
+        - Isolation = Multi-tenant setup can avoid collisions
+
+        - Durability = Once set, the data remains unchanged
+
+
+    - BASE properties are the basis of NoSQL systems:
+
+        - Basically Available = The system is guaranteed to be available in the event of a failure
+
+        - Soft State = The state could change due to multi-node inconsistencies
+
+        - Eventual Consistency = All nodes will eventually reconcile on the last state, but there could be
+                                   a period of inconsistency
+
+
+
+- OLTP and OLAP Systems
+
+    - Data producers typically push data into Operational Data Stores.  This data can be sent to a DW or
+        data lake for processing and consumption.
+
+
+    - OLTP systems are transaction-oriented, with continuous updates supporting business operations.  OLAP
+        systems are designed for ad-hoc queries and decision support.
+
+
+    - Data Platform Service Models
+
+        - SaaS = hosted applications
+
+        - PaaS = OS, development tools, db management, BI analytics
+
+        - IaaS = data center, networking, servers, storage
+
+
+
+- SMP and MPP Computing
+
+    - With Symettric Multi-processing (SMP), all the processing units share the same resources (OS, memory,
+        disk) and are connected on a system bus.
+
+
+    - With MPP, each processor has it's own set of resources and is fully independent and isolated from all
+        other processors.  Examples include Teradata, GreenPlum, Vertica, and AWS Redshift.
+
+
+
+- Parallel and Distributed Computing
+
+    - In parallel processing, all the processors have access to a single shared memory, instead of having
+        to exchange information by passing messages between the processors.
+
+
+    - In distributed processing, the processors have access to their own memory pool.  The 2 most popular
+        distributed architectures are Hadoop and Spark.
+
+
+    - Hadoop is an Apache project that started at Yahoo in 2006.  It is an inexpensive, reliable, and 
+        scalable framework.  Several distributions (ie Cloudera, Hortonworks, MapR, and EMR) have offered
+        packaging variations.  It is compatible with many types of hardware.  It works with scalable
+        distributed filesystems such as S3, HFTP, and HDFS.  It provides replication on commodity-grade
+        hardware and a service-oriented architecture with many open source components.
+
+      It has a master-slave architecture that follows the map-reduce model.  It's 3 main components are
+        HDFS for storage, YARN for resource management, and MapReduce as the application layer.  HDFS data
+        is broken into blocks, replicated, and sent to worker nodes where they are processed in parallel.
+        In consists of a series of MapReduce jobs.  NameNode keeps track of everything in the cluster.
+        YARN allocates resources.  JobTracker and TaskTracker monitor the progress of a job.  All results
+        are aggregated and written back to the HDFS cluster.
+
+
+    - Spark is an Apache project that started at AMPLab in 2012.  It was written in Scala.  It has conectors
+        for different producers and consumers.  A job is broken into several stages and each stage is
+        broken down into several tasks that are executed by executors on cores.  Data is broken into 
+        partitions that are processed in parallel on worker core nodes.  Being able to partition
+        effectively is what enables Spark to be horizontally scalable.
+
+
+                          <-------------------------> Worker Node
+        Driver Program   /                          /   + Executor
+          + Spark context   <--->  Cluster Manager        + Task
+                         \                          \     + Cache
+
+                                                      Worker Node
+                                                        + Executor
+                                                          + Task
+                                                          + Cache
+
+
+    - Spark is the Swiss Army knife of data processing.  It is 100x faster than Hadoop by keeping data in 
+        memory in a DAG.  It processes data in RAM using RDDs, which are immutable, and transformations are
+        lazily executed.
+
+
+
+- Business Justification for Tech Spending
+
+    - Data projects must be disciplined and controlled, and should demonstrate value to business decision
+        makers.  
+
+
+    - A joint business-technology strategy helps clarify the role of technology in driving business value
+        to provide a transformation agenda.  KPIs and metrics including growth, ROI, profitability,
+        market share, earnings, margin, and revenue help quantify this investment.
+
+
+    - Execution time of data projects is usually significant, so it is important to achieve the end goal
+        in well-articulated baby steps.
+
+
+
+- Strategy for Business Transformation to Use Data as an Asset
+
+    - Data-driven organizations exhibit a culture of analytics.  This culture must extend to the entire
+        organization.
+
+
+    - Here are some best practices for managing a big data initiative:
+
+        - Understand the objectives and come up with an overall enterprise strategy.
+
+        - Assess the current state and document all the use cases and data sources.
+
+        - Develop a roadmap that can be shared for collaborating and deciding on the main tools and
+            frameworks to leverage organization-wide.
+
+        - Design for data democratization and allow people to have access to data.
+
+        - Establish rules for data governance.
+
+        - Manage change as a continuous cycle of improvement.  There should be a Center of Excellence team
+            that can serve as a hub and spoke model that interfaces with all the individual LOBs.  Emphasis
+            should be placed on training to engage and educate the team.
+
+
+
+- Big Data Trends and Best Practices
+
+    - There is an increase in the adoption of cloud infrastructure because of the following:
+
+        - Affordable and scalable storage
+
+        - Elastic compute infrastructure that is pay-as-you-go
+
+        - Multi-cloud strategy and on-premises presence to hedge risks
+
+        - Increase in data consolation to break down silos in data lakes
+
+        - DWs still live on, while lakes and lakehouses are introduced
+
+        - Unstructured data usage is on the rise
+
+        - Improved speed to insights
+
+        - Convergence of big data and ML
+
+        - Detecting and responding to signals in real-time as opposed to batch
+
+        - Analytics has moved from simple BI to ML and AI, from descriptive to prescriptive to predictive
+
+        - Improved governance and security
+
+        - Data discovery using business and operational enterprise-level meta stores
+
+        - Data governance to control who has access to what data
+
+        - Data lineage and data quality
+
+
+    - Here are some best practices form building robust and reliable data platforms:
+
+        - Build decoupled (storage and compute) systems because storage is far cheaper than compute.
+            The ability to turn off compute will be a big cost saving.  Having a microservice architecture
+            will help manage such changes.
+
+        - Leverage cloud storage, preferably in an open format
+
+        - Use the right tool for the right job
+
+        - Break down the data silos and create a single view of the data
+
+        - Design data solutions with consideration of use case specific tradeoffs on latency, throughput,
+            and access patterns.
+
+        - Log design patterns where you maintain immutable logs for audit, compliance, and traceability
+            requirements.
+
+        - Expose multiple views of the data for consumers with different access privileges instead of
+            copying the datasets multiple times.
+
+        - Always consider build vs buy.
